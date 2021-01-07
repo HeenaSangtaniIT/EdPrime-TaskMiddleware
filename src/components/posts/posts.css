@@ -1,0 +1,54 @@
+.mainDivPost {
+  font-family: "Arial";
+  width: 98%;
+}
+.postDiv {
+  font-family: "Arial";
+  width: 96%;
+  border: 1px solid #cccddd;
+  margin: 2%;
+  border-radius: 10px;
+}
+
+.postLink {
+  color: black;
+  text-decoration: none;
+}
+
+.postTitle {
+  font-weight: bold;
+  background-color: #cccccc;
+  padding: 10px;
+  border-radius: 8px 8px 0px 0px;
+}
+.postBody {
+  padding: 10px;
+}
+
+.navBar {
+  font-family: "Arial";
+  width: 98%;
+  padding: 10px 0px 10px 0px;
+}
+.navBarUL {
+  width: 100%;
+}
+.navBarLI {
+  float: left;
+  width: 30%;
+  list-style-type: none;
+  font-weight: 700;
+  text-align: center;
+  margin-left: -10px;
+}
+.navBarLI a {
+  text-decoration: none;
+  color: blue;
+}
+.headingDiv {
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+  overflow: hidden;
+  padding: 43px 0px 0px 20px;
+}
