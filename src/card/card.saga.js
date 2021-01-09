@@ -10,9 +10,7 @@ function* genCard(action){
 
      })
       const response = yield call(generateCard)
-        console.log("response",response.data)
 
-        // if(response.data){
             yield put({
                 type :SHOW_CARD_SUCCESS,
                 payload: {
@@ -21,15 +19,6 @@ function* genCard(action){
                 } 
             })
            
-        // }
-        // else {
-        //     yield put({
-        //         type: SHOW_CARD_ERROR,
-        //         payload:{
-        //            error:"Something Went Wrong!"
-        //         }
-        //     })   
-        // }
     } catch (error) {
         yield put({
             type: SHOW_CARD_ERROR,

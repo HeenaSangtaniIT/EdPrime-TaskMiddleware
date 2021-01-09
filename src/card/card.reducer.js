@@ -8,7 +8,6 @@ const initialState = {
 
 const cardReducer = (state = initialState, action) => {
     const { payload } = action
-    console.log("card payload", action);
     switch (action.type) {
         case SHOW_CARD_LOADING:
             return {

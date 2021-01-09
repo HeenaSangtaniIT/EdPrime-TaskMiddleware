@@ -19,13 +19,12 @@ class App extends Component {
   }
  
   render() {
-    console.log("this.props.cardData", this.props.cardData, this.props.loading);
     return (
       <div>
         {this.props.loading === false &&
         this.props.cardData.map((item, i) => {
                   return (
-                    <Posts
+                    <Posts key={item.id}
                     postTitle={item.title}
                     postBody={item.body}
                     postId={item.id}
@@ -48,30 +47,3 @@ const mapStateToProps = (state) => {
   }
 }
 export default connect(mapStateToProps, { getCards })(App);
-
-// function App() {
-//   useEffect(() => {
-    
-//   }, [isLogin, error, isLoading]);
-
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
